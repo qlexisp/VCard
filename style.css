@@ -1,0 +1,35 @@
+.header {
+    color: grey;
+}
+.container {
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.9fr 1.1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Area1 Area1 . ."
+      "Area1 Area1 Area2 Area2"
+      "Area1 Area1 . .";
+  }
+.Area1 {
+     grid-area: Area1;
+     background: #554348;
+     color: white;
+     padding: 20px;
+     font-family: 'Courier';
+     font-size: 14px;
+    }
+.image {
+    
+}
+.Area2 { 
+    grid-area: Area2;
+    background: #d4f5f5;
+    color: black;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
+  
